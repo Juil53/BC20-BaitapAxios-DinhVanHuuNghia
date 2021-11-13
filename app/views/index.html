@@ -123,12 +123,13 @@
               <input id="HinhSP" class="form-control" placeholder="Nhập vào hình sản phẩm" />
             </div>
             <div class="form-group">
-              <label for="">Loại sản phẩm: </label>
-              <select class="form-control" id="loaiSP">
-                <option value="phone">Phone</option>
-                <option value="laptop">Laptop</option>
-                <option value="other">Other</option>
-              </select>
+              <label for="">Mô tả: </label>
+              <textarea 
+              class="form-control" 
+              id="moTa" 
+              cols="30" 
+              rows="10"
+              ></textarea>
             </div>
           </div>
           <!-- Modal footer -->
@@ -157,8 +158,10 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/series-label.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <!-- AXIOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="../services/product_services.js"></script>
+  <script src="../models/product.js"></script>
   <script src="../controllers/index.js"></script>
 </body>
 
